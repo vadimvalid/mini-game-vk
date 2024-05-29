@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Rubik";
+        src: url("./fonts/Rubik-ExtraBold.woff2") format("woff2");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/wait.css" />
+    <title>Новинки</title>
+  </head>
+  <body>
+    <div class="content container wait">
+      <header class="header">
+        <picture>
+          <source srcset="./images/bg-sticky.webp" type="image/webp" />
+          <img
+            src="./images/bg-sticky.png"
+            alt="Новинка три в ряд"
+            loading="lazy"
+          />
+        </picture>
+      </header>
+      <main class="main">
+        <div class="main__content">
+          <h2>Подождите, рисую вас!</h2>
+          <div class="text">
+            <div class="text__banner">
+              <p>Уже рисую...</p>
+              <p>
+                Возможно мне потребуется больше времени. Можно я отправлю твой
+                портрет тебе в сообщения?
+              </p>
+              <button class="btn">Разрешить!</button>
+            </div>
+            <p>Осталось подождать: <span>29 сек</span>.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

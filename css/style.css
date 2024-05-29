@@ -1,0 +1,195 @@
+body {
+  font-family: "Rubik";
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 15.45% 85%;
+  max-height: 100dvh;
+  overflow: hidden;
+  aspect-ratio: 0.59;
+}
+
+.header {
+  grid-row: 1/2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header picture,
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.main {
+  position: relative;
+  grid-row: 2/-1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 15px 5px 30px;
+  border-bottom: 1px solid #551278;
+  background: #9b3dbe;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -4px 2px 0px rgba(0, 0, 0, 0.25) inset;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media screen and (min-width: 500px) {
+  .main__head {
+    padding: 15px 20px 10px 46px;
+  }
+}
+
+.main__head h2 {
+  color: #fff615;
+  text-align: center;
+  text-shadow: 0px 2px 0px #c25638, 0px 4px 2px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #c25638;
+  font-size: clamp(16px, 4vw, 35px);
+}
+
+.count {
+  position: relative;
+  width: clamp(70px, 8vw, 90px);
+  padding: 0 clamp(14px, 8vw, 18px);
+  border-radius: 19px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 1px 0px rgba(255, 255, 255, 0.15),
+    0px -2px 1px 0px rgba(0, 0, 0, 0.25);
+  text-align: right;
+}
+
+.count::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(18px, 5vw, 38px);
+  height: clamp(18px, 5vw, 38px);
+  background-image: url("../images/btn-plus.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(40%);
+  z-index: 1;
+}
+
+.count__button {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: clamp(30px, 5vw, 60px);
+  height: clamp(40px, 5vw, 70px);
+  cursor: pointer;
+}
+
+.count__close {
+  all: unset;
+  width: clamp(30px, 5vw, 50px);
+  height: clamp(30px, 5vw, 50px);
+  cursor: pointer;
+}
+
+.count p {
+  color: #fff;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.4);
+  font-size: clamp(24px, 5vw, 45px);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.main__content {
+  flex: 1;
+  position: relative;
+  max-width: 570px;
+  height: 100%;
+  background-image: url("../images/main-bg.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.main__content picture {
+  height: 100%;
+}
+
+.main__content img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.links {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: calc(100% - 44px);
+  max-width: 500px;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 500px) {
+  .links {
+    bottom: 34px;
+    gap: 32px;
+    width: calc(100% - 88px);
+  }
+}
+
+.btn {
+  padding: clamp(10px, 5vw, 22px) clamp(15px, 5vw, 26px);
+  border-radius: clamp(20px, 5vw, 38px);
+  border: 1px solid #0c6a00;
+  background: linear-gradient(180deg, #8efb53 0%, #13a408 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 6px 4px 0px rgba(246, 255, 143, 0.4) inset,
+    0px -6px 6px 0px rgba(105, 12, 74, 0.25) inset;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.4);
+  font-size: clamp(20px, 5vw, 32px);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--secondary {
+  border: 1px solid #8d2d2d;
+  background: linear-gradient(180deg, #ff8c26 0%, #f75c19 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 6px 4px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -6px 6px 0px rgba(105, 12, 74, 0.25) inset;
+}

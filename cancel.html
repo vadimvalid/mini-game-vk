@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Rubik";
+        src: url("./fonts/Rubik-ExtraBold.woff2") format("woff2");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/wait.css" />
+    <link rel="stylesheet" href="./css/cancel.css" />
+    <title>Новинки</title>
+  </head>
+  <body>
+    <div class="content container wait cancel">
+      <header class="header">
+        <picture>
+          <source srcset="./images/bg-sticky.webp" type="image/webp" />
+          <img
+            src="./images/bg-sticky.png"
+            alt="Новинка три в ряд"
+            loading="lazy"
+          />
+        </picture>
+      </header>
+      <main class="main">
+        <div class="main__content">
+          <h2>Я не могу нарисовать ваш портрет!</h2>
+          <picture>
+            <source srcset="./images/frame.webp" type="image/webp" />
+            <img src="./images/frame.png" alt="image" loading="lazy" />
+          </picture>
+          <picture class="inner">
+            <source srcset="./images/frame-inner.webp" type="image/webp" />
+            <img src="./images/frame-inner.png" alt="image" loading="lazy" />
+          </picture>
+          <div class="text">
+            <p>
+              Простите, но я не могу нарисовать ваш портрет.У вас нет аватарки,
+              либо на ней плохо считывается ваше лицо, или их несколько.
+              Прочитайте инструкцию и попробуйте снова!
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn btn--secondary">Инструкция</button>
+            <button class="btn">Продолжить</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

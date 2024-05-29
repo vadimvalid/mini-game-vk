@@ -1,0 +1,66 @@
+/* Connection page */
+
+.connection .main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  background-image: url("../images/bg-start.png");
+}
+
+.connection .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(8px, 5vw, 20px);
+  padding: clamp(40px, 5vw, 86px) clamp(20px, 5vw, 30px) clamp(12px, 5vw, 32px);
+  border-radius: clamp(30px, 5vw, 55px);
+  border: 1px solid #551278;
+  background: #9b3dbe;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -4px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.connection .box > h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  color: #fff615;
+  text-align: center;
+  text-shadow: 0px 2px 0px #c25638, 0px 4px 2px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #c25638;
+  font-size: clamp(20px, 5vw, 45px);
+  border-radius: 37px;
+  border: 1px solid #551278;
+  background: #9b3dbe;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -4px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.connection .box > picture,
+.connection .box > img {
+  max-width: clamp(80px, 5vw, 200px);
+  height: auto;
+}
+
+.connection .box > p {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.4);
+  font-size: clamp(18px, 5vw, 30px);
+  line-height: 1.12;
+}
+
+.connection .box .btn {
+  flex: 1;
+  padding: clamp(8px, 5vw, 12px) clamp(20px, 5vw, 30px);
+  font-size: clamp(18px, 5vw, 30px);
+}

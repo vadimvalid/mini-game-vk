@@ -1,0 +1,70 @@
+/* Cancel page */
+
+.cancel .main__content {
+  position: relative;
+  background-image: url("../images/bg-start.png");
+  padding: clamp(5px, 5vw, 10px) clamp(8px, 3vw, 20px) clamp(10px, 5vw, 20px);
+}
+
+.cancel .main__content > picture {
+  width: 33%;
+  height: auto;
+  margin: clamp(20px, 5vw, 34px) 0;
+  z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .cancel .main__content > picture {
+    min-width: 175px;
+  }
+}
+
+.cancel .main__content > .inner {
+  position: absolute;
+  top: 146px;
+  width: 145px;
+  height: 128px;
+  margin: 0;
+  transform: translateX(-9px);
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .cancel .main__content > .inner {
+    top: 20vw;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .cancel .main__content > .inner {
+    top: 15vw;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .cancel .main__content > .inner {
+    top: 26vw;
+  }
+}
+
+.cancel .main__content .buttons {
+  margin-top: clamp(12px, 5vw, 26px);
+}
+
+.cancel .buttons {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  gap: clamp(10px, 5vw, 16px);
+}
+
+.cancel .btn {
+  flex: 1;
+  padding: clamp(8px, 5vw, 12px) clamp(10px, 5vw, 20px);
+  font-size: clamp(18px, 5vw, 30px);
+}
+
+.cancel-2 .main__content > picture {
+  width: 75%;
+}

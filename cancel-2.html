@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Rubik";
+        src: url("./fonts/Rubik-ExtraBold.woff2") format("woff2");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/wait.css" />
+    <link rel="stylesheet" href="./css/cancel.css" />
+    <title>Новинки</title>
+  </head>
+  <body>
+    <div class="content container wait cancel cancel-2">
+      <header class="header">
+        <picture>
+          <source srcset="./images/bg-sticky.webp" type="image/webp" />
+          <img
+            src="./images/bg-sticky.png"
+            alt="Новинка три в ряд"
+            loading="lazy"
+          />
+        </picture>
+      </header>
+      <main class="main">
+        <div class="main__content">
+          <h2>Я не могу определить ваш пол!</h2>
+          <picture>
+            <source srcset="./images/gender.webp" type="image/webp" />
+            <img src="./images/gender.png" alt="image" loading="lazy" />
+          </picture>
+          <div class="text">
+            <p>
+              Простите, но мы не нашли указание пола в настройках социальной
+              сети. Пожалуйста, выберите нужный вариант:
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn btn--secondary">Мужской</button>
+            <button class="btn">Женский</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
