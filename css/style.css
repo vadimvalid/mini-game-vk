@@ -130,8 +130,9 @@ body {
 .main__content {
   flex: 1;
   position: relative;
-  width: 100%;
+  max-width: 570px;
   height: 100%;
+  margin: 0 auto;
   background-image: url("../images/main-bg.webp");
   background-size: contain;
   background-repeat: no-repeat;
