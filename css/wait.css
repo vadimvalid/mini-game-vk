@@ -1,9 +1,5 @@
 /* Wait page */
 
-.wait .main {
-  overflow-y: auto;
-}
-
 .wait .main__content {
   display: flex;
   flex-direction: column;
