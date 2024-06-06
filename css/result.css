@@ -43,3 +43,19 @@
   object-fit: contain;
   transform: translateY(-50%);
 }
+
+@media screen and (max-width: 768px) {
+  .result .buttons {
+    gap: 10px;
+  }
+
+  .result .buttons .btn {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  .result .buttons .btn > img {
+    width: 40px;
+    height: 16px;
+  }
+}
